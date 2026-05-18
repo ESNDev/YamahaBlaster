@@ -5,13 +5,12 @@
 }
 
 body {
-  overflow-x: hidden;
   background: #111;
+  overflow-x: hidden;
 }
 
-iframe {
-  width: 100vw;
-  height: 100vh;
-  border: none;
+canvas {
   display: block;
+  width: 100vw;
+  height: auto;
 }
