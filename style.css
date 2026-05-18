@@ -27,6 +27,11 @@ button{
   border-radius: 10%;
 }
 
+#ButtonContainer{
+  display: flex;
+  flex-direction: row;
+}
+
 #ManualPDF{
   width: 100%;
   height: 1000px;
