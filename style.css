@@ -11,10 +11,16 @@
   width: 100%
   height: auto;
 }
+#Table1 thead tr th{
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  width: 30vw;
+  height: 30px;
+}
 #Table1 tbody tr th{
   border: 1px solid black;
   margin: 0;
   padding: 0;
-  width: 20vw;
   height: 30px;
 }
