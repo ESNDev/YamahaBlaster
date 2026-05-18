@@ -4,6 +4,6 @@
 }
 
 iframe{
-  width: 816px;
-  height: 1056px;
+  width: 100%;
+  aspect-ratio: 17 / 22;
 }
