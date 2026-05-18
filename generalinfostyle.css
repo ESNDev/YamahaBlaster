@@ -1,9 +1,17 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-iframe{
-  width: 100%;
-  aspect-ratio: 17 / 22;
+body {
+  overflow-x: hidden;
+  background: #111;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  display: block;
 }
