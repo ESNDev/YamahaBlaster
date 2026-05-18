@@ -15,8 +15,16 @@
   border: 1px solid black;
   margin: 0;
   padding: 0;
-  width: 30vw;
   height: 30px;
+}
+#PartHeader{
+  width: 20vw;
+}
+#LinkHeader{
+  width: 20vw;
+}
+#PhotosHeader{
+  width: 40vw;
 }
 #Table1 tbody tr th{
   border: 1px solid black;
