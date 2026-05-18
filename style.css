@@ -24,12 +24,12 @@ button{
   margin-left: auto;
   margin-right: auto;
   background-color: grey;
-  border-radius: 50%;
+  border-radius: 30%;
 }
 
 #ButtonContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #ManualPDF{
