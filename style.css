@@ -10,6 +10,7 @@
   height: auto;
 }
 #Table1 tbody tr th{
+  border: 1px solid black;
   width: 100px;
   height: 30px;
 }
