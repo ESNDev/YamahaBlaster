@@ -27,12 +27,13 @@ h1{
   border: 1px solid black;
   border-collapse: collapse;
   width: 100%;
-  min-height: 30px;
+  height: auto;
 }
 #Table1 thead tr th{
   border: 1px solid black;
   font-weight: bold;
-  height: auto;
+  min-height: 30px;
+  background-color: grey;
 }
 #PartHeader{
   width: 20vw;
@@ -45,5 +46,5 @@ h1{
 }
 #Table1 tbody tr th{
   border: 1px solid black;
-  height: 30px;
+  min-height: 30px;
 }
