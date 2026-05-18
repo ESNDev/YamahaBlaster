@@ -3,3 +3,13 @@
   height: 1000px;
   border: none;
 }
+
+#Table1{
+  border: 1px solid black;
+  width: 100%
+  height: auto;
+}
+#Table1 tbody tr th{
+  width: 100px;
+  height: 30px;
+}
