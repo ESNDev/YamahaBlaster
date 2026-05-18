@@ -25,6 +25,7 @@ button{
   margin-right: auto;
   background-color: grey;
   border-radius: 30%;
+  cursor: pointer;
 }
 
 #ButtonContainer{
