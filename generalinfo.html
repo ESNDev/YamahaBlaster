@@ -1,31 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Yamaha Blaster Manual</title>
-  <link rel="stylesheet" type="text/css" href="generalinfostyle.css">
+
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      overflow-x: hidden;
+    }
+
+    .page {
+      display: block;
+      margin: 0 auto;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: auto;
+    }
+  </style>
+
+  <!-- PDF.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.min.js"></script>
 </head>
 
 <body>
 
-  <iframe class="pdf"
-    src="GeneralInfo.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width">
-  </iframe>
+<script>
+  // REQUIRED worker setup
+  pdfjsLib.GlobalWorkerOptions.workerSrc =
+    "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.worker.min.js";
 
-  <iframe class="pdf"
-    src="GeneralInfo2.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width">
-  </iframe>
+  // Your PDFs (replace/add as needed)
+  const pdfFiles = [
+    "GeneralInfo.pdf",
+    "GeneralInfo2.pdf",
+    "GeneralInfo3.pdf",
+    "GeneralInfo4.pdf",
+    "GeneralInfo5.pdf"
+  ];
 
-  <iframe class="pdf"
-    src="GeneralInfo3.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width">
-  </iframe>
+  async function renderPDF(url) {
+    const pdf = await pdfjsLib.getDocument(url).promise;
 
-  <iframe class="pdf"
-    src="GeneralInfo4.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width">
-  </iframe>
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+      const page = await pdf.getPage(pageNum);
 
-  <iframe class="pdf"
-    src="GeneralInfo5.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=page-width">
-  </iframe>
+      const baseViewport = page.getViewport({ scale: 1 });
+
+      // FULL WIDTH scaling (this is the key part)
+      const scale = window.innerWidth / baseViewport.width;
+      const viewport = page.getViewport({ scale });
+
+      const canvas = document.createElement("canvas");
+      const ctx = canvas.getContext("2d");
+
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+
+      document.body.appendChild(canvas);
+
+      await page.render({
+        canvasContext: ctx,
+        viewport: viewport
+      }).promise;
+    }
+  }
+
+  // Render all PDFs in sequence
+  async function loadAll() {
+    for (const pdf of pdfFiles) {
+      await renderPDF(pdf);
+    }
+  }
+
+  loadAll();
+</script>
 
 </body>
 </html>
