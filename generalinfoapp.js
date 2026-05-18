@@ -1,1 +1,51 @@
+import * as pdfjsLib from 'https://unpkg.com/pdfjs-dist@4.6.82/build/pdf.min.mjs';
 
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://unpkg.com/pdfjs-dist@4.6.82/build/pdf.worker.min.mjs';
+
+const pdfFiles = [
+  "GeneralInfo.pdf",
+  "GeneralInfo2.pdf",
+  "GeneralInfo3.pdf",
+  "GeneralInfo4.pdf",
+  "GeneralInfo5.pdf"
+];
+
+async function renderPDF(url) {
+
+  const pdf = await pdfjsLib.getDocument(url).promise;
+
+  for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+
+    const page = await pdf.getPage(pageNum);
+
+    const baseViewport = page.getViewport({ scale: 1 });
+
+    // SCALE TO FULL WINDOW WIDTH
+    const scale = window.innerWidth / baseViewport.width;
+
+    const viewport = page.getViewport({ scale });
+
+    const canvas = document.createElement("canvas");
+
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    document.body.appendChild(canvas);
+
+    await page.render({
+      canvasContext: ctx,
+      viewport: viewport
+    }).promise;
+  }
+}
+
+async function loadAllPDFs() {
+  for (const pdf of pdfFiles) {
+    await renderPDF(pdf);
+  }
+}
+
+loadAllPDFs();
