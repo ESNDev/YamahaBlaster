@@ -27,6 +27,7 @@ button{
   background-color: grey;
   border-radius: 8px;
   cursor: pointer;
+  color: black;
 }
 
 #ButtonContainer{
