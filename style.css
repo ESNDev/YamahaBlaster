@@ -79,4 +79,5 @@ button{
 
 .TopBar{
   background-color: red;
+  position: fixed;
 }
