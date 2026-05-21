@@ -76,3 +76,7 @@ button{
   background-color: white;
   display: block;
 }
+
+.TopBar{
+  background-color: 'red';
+}
