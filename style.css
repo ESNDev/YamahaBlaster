@@ -108,48 +108,48 @@ button{
 @media (min-width: 600px) {
 .pdf{
   width: 600px;
-  height: 800px;
+  height: 777px;
 }
 }
 
 @media (min-width: 700px) {
 .pdf{
   width: 700px;
-  height: 900px;
+  height: 906px;
 }
 }
 
 @media (min-width: 800px) {
 .pdf{
   width: 800px;
-  height: 1000px;
+  height: 1036px;
 }
 }
 
 @media (min-width: 900px) {
 .pdf{
   width: 900px;
-  height: 1100px;
+  height: 1165px;
 }
 }
 
 @media (min-width: 1000px) {
 .pdf{
   width: 1000px;
-  height: 1200px;
+  height: 1295px;
 }
 }
 
 @media (min-width: 1100px) {
 .pdf{
   width: 1100px;
-  height: 1300px;
+  height: 1424px;
 }
 }
 
 @media (min-width: 1200px) {
 .pdf{
   width: 1200px;
-  height: 1400px;
+  height: 1553px;
 }
 }
