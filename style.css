@@ -78,11 +78,15 @@ button{
 }
 
 @media (max-width: 768px) {
+.pdf{
   width: 500px;
   height: 700px;
 }
+}
 
 @media (min-width: 769px) {
+.pdf{
   width: 900px;
   height: 1200px;
+}
 }
