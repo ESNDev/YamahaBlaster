@@ -77,17 +77,45 @@ button{
   display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 299px) {
+.pdf{
+  width: 200px;
+  height: 300px;
+}
+}
+
+@media (min-width: 300px) {
 .pdf{
   width: 300px;
   height: 500px;
 }
 }
 
+@media (min-width: 400px) {
+.pdf{
+  width: 400px;
+  height: 600px;
+}
+}
+
+@media (min-width: 500px) {
+.pdf{
+  width: 500px;
+  height: 700px;
+}
+}
+
+@media (min-width: 600px) {
+.pdf{
+  width: 600px;
+  height: 800px;
+}
+}
+
 @media (min-width: 700px) {
 .pdf{
   width: 700px;
-  height: 9000px;
+  height: 900px;
 }
 }
 
@@ -102,5 +130,26 @@ button{
 .pdf{
   width: 900px;
   height: 1100px;
+}
+}
+
+@media (min-width: 1000px) {
+.pdf{
+  width: 1000px;
+  height: 1200px;
+}
+}
+
+@media (min-width: 1100px) {
+.pdf{
+  width: 1100px;
+  height: 1300px;
+}
+}
+
+@media (min-width: 1200px) {
+.pdf{
+  width: 1200px;
+  height: 1400px;
 }
 }
