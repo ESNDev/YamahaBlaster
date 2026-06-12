@@ -80,28 +80,28 @@ button{
 @media (max-width: 299px) {
 .pdf{
   width: 200px;
-  height: 300px;
+  height: 259px;
 }
 }
 
 @media (min-width: 300px) {
 .pdf{
   width: 300px;
-  height: 500px;
+  height: 389px;
 }
 }
 
 @media (min-width: 400px) {
 .pdf{
   width: 400px;
-  height: 600px;
+  height: 518px;
 }
 }
 
 @media (min-width: 500px) {
 .pdf{
   width: 500px;
-  height: 700px;
+  height: 648px;
 }
 }
 
