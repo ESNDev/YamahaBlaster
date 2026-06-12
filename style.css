@@ -69,87 +69,11 @@ button{
   display: flex;
 }
 
-.pdf{
+.ManualImages{
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  border: none;
-  background-color: white;
-  display: block;
-}
-
-@media (max-width: 299px) {
-.pdf{
-  width: 200px;
-  height: 259px;
-}
-}
-
-@media (min-width: 300px) {
-.pdf{
-  width: 300px;
-  height: 389px;
-}
-}
-
-@media (min-width: 400px) {
-.pdf{
-  width: 400px;
-  height: 518px;
-}
-}
-
-@media (min-width: 500px) {
-.pdf{
-  width: 500px;
-  height: 648px;
-}
-}
-
-@media (min-width: 600px) {
-.pdf{
-  width: 600px;
-  height: 777px;
-}
-}
-
-@media (min-width: 700px) {
-.pdf{
-  width: 700px;
-  height: 906px;
-}
-}
-
-@media (min-width: 800px) {
-.pdf{
-  width: 800px;
-  height: 1036px;
-}
-}
-
-@media (min-width: 900px) {
-.pdf{
-  width: 900px;
-  height: 1165px;
-}
-}
-
-@media (min-width: 1000px) {
-.pdf{
-  width: 1000px;
-  height: 1295px;
-}
-}
-
-@media (min-width: 1100px) {
-.pdf{
-  width: 1100px;
-  height: 1424px;
-}
-}
-
-@media (min-width: 1200px) {
-.pdf{
-  width: 1200px;
-  height: 1553px;
-}
+  margin-top: 0;
+  margin-bottom: 0;
 }
