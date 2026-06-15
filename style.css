@@ -33,6 +33,7 @@ button{
   border-radius: 8px;
   cursor: pointer;
   color: black;
+  font-size: x-large;
 }
 
 #ButtonContainer{
