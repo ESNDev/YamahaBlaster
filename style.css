@@ -20,12 +20,13 @@ h1{
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid black;
+  font-size: 60px;
 }
 
 button{
   border: 1px solid black;
   width: 90%;
-  height: 50px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
@@ -33,6 +34,7 @@ button{
   border-radius: 8px;
   cursor: pointer;
   color: black;
+  font-size: 40px;
 }
 
 #ButtonContainer{
