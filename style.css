@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
 html{
   margin: 0;
   padding: 0;
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -41,21 +43,26 @@ button{
   width: 100%;
   height: auto;
 }
+
 #Table1 thead tr th{
   border: 1px solid black;
   font-weight: bold;
   min-height: 30px;
   background-color: grey;
 }
+
 #PartHeader{
   width: 20vw;
 }
+
 #LinkHeader{
   width: 20vw;
 }
+
 #PhotosHeader{
   width: 60vw;
 }
+
 #Table1 tbody tr th{
   border: 1px solid black;
   min-height: 30px;
@@ -67,6 +74,8 @@ button{
   height: 50px;
   background-color: white;
   display: flex;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
 }
 
 .ManualImages{
